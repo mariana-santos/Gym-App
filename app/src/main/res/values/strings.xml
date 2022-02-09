@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gym app</string>
+    <string name="fab_content_desc">Criar treino</string>
+    <string name="meus_treinos">Meus Treinos</string>
+</resources>

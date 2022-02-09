@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="start"
+            android:text="@string/meus_treinos"
+            android:textColor="@color/darkGray"
+            android:textSize="40sp"
+            android:lineHeight="40dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/novoTreino"
+            android:src="@drawable/ic_round_add_24" />
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        style="@style/CardView.Dark"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@drawable/undraw_illustration">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_baseline_more_vert_24"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aumento muscular"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                android:gravity="bottom"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@drawable/undraw_illustration">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/black"
+                android:src="@drawable/ic_baseline_more_vert_24"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Glúteos"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                android:gravity="bottom"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
